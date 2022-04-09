@@ -6,14 +6,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%# stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%# javascript_importmap_tags %>
     <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
   </head>
 
   <body>
-    <%= image_pack_tag "media/images/daniel-leone-g30P1zcOzXo.jpg" %>
-    <img src="<%= asset_pack_path "media/images/daniel-leone-g30P1zcOzXo.jpg" %>">
+    <%# image_pack_tag "media/images/daniel-leone-g30P1zcOzXo.jpg" %>
+    <%# <img src="<%= asset_pack_path "media/images/daniel-leone-g30P1zcOzXo.jpg" %>
     <%= yield %>
   </body>
 </html>
